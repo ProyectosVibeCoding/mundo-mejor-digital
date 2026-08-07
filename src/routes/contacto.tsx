@@ -31,7 +31,7 @@ const TIPOS: { value: Tipo; label: string; hint: string }[] = [
 
 export const Route = createFileRoute("/contacto")({
   validateSearch: (search: Record<string, unknown>): { tipo?: Tipo } => {
-    const tipo = search.tipo;
+    const tipo = search["tipo"];
     return typeof tipo === "string" && TIPOS.some((t) => t.value === tipo)
       ? { tipo: tipo as Tipo }
       : {};
