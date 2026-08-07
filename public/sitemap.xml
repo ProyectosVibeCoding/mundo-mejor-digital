@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: reemplazar BASE_URL cuando el dominio esté definido -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/</loc></url>
+  <url><loc>/institucional</loc></url>
+  <url><loc>/a-quien-atendemos</loc></url>
+  <url><loc>/formacion</loc></url>
+  <url><loc>/contacto</loc></url>
+</urlset>
