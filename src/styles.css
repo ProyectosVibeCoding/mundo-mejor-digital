@@ -160,5 +160,33 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+}
+
+@utility iso-blob {
+  background-image: var(--gradient-iso);
+  border-radius: 9999px;
+  filter: blur(0.5px);
+  opacity: 0.18;
+}
+
+@utility surface-soft {
+  background-image: var(--gradient-soft);
+}
+
+@utility shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+@utility shadow-soft {
+  box-shadow: var(--shadow-soft);
 }
