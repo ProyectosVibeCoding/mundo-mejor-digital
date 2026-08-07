@@ -4,6 +4,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ==========================================================
+ * Sistema de diseño — Fundación Por Un Mundo Mejor
+ * Turquesa institucional + verde menta + azul marino
+ * ========================================================== */
+
 /*
  * Design system definition.
  *
@@ -19,6 +24,9 @@
  */
 
 @theme inline {
+  --font-sans:
+    "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", "Nunito Sans", ui-serif, serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -59,29 +67,41 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-mint: var(--mint);
+  --color-mint-foreground: var(--mint-foreground);
+  --color-navy: var(--navy);
+  --color-sand: var(--sand);
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 1rem;
+  --background: oklch(0.995 0.004 174);
+  --foreground: oklch(0.28 0.045 250);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.28 0.045 250);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.28 0.045 250);
+  --primary: oklch(0.56 0.075 190);
+  --primary-foreground: oklch(0.99 0.005 180);
+  --secondary: oklch(0.93 0.045 165);
+  --secondary-foreground: oklch(0.32 0.05 200);
+  --muted: oklch(0.96 0.012 180);
+  --muted-foreground: oklch(0.52 0.03 225);
+  --accent: oklch(0.9 0.06 168);
+  --accent-foreground: oklch(0.3 0.05 210);
+  --mint: oklch(0.87 0.07 160);
+  --mint-foreground: oklch(0.3 0.05 210);
+  --navy: oklch(0.28 0.045 250);
+  --sand: oklch(0.97 0.015 90);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.91 0.018 190);
+  --input: oklch(0.91 0.018 190);
+  --ring: oklch(0.56 0.075 190);
+  --gradient-iso: linear-gradient(135deg, oklch(0.87 0.07 160), oklch(0.56 0.075 190));
+  --gradient-soft: linear-gradient(180deg, oklch(0.97 0.02 172), oklch(0.995 0.004 174));
+  --shadow-soft: 0 18px 40px -24px oklch(0.4 0.06 210 / 0.35);
+  --shadow-card: 0 2px 4px -2px oklch(0.4 0.06 210 / 0.15), 0 12px 28px -18px oklch(0.4 0.06 210 / 0.3);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
