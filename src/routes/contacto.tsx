@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Instagram, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useState } from "react";
 
 import { Section, SectionHeading } from "@/components/sections/Section";
@@ -172,6 +172,17 @@ function Contacto() {
                   <Mail className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
                   <a href="mailto:contacto@porunmundomejor.org" className="hover:text-foreground">
                     contacto@porunmundomejor.org
+                  </a>
+                </li>
+                <li className="flex gap-3">
+                  <Instagram className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
+                  <a
+                    href="https://www.instagram.com/fundacion.porunmundomejor/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground"
+                  >
+                    @fundacion.porunmundomejor
                   </a>
                 </li>
               </ul>

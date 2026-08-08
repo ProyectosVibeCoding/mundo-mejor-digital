@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 import { Logo } from "./Logo";
 
@@ -44,6 +44,17 @@ export function Footer() {
               <Mail className="mt-0.5 size-4 shrink-0" />
               <a href="mailto:contacto@porunmundomejor.org" className="hover:text-primary-foreground">
                 contacto@porunmundomejor.org
+              </a>
+            </li>
+            <li className="flex items-start gap-2">
+              <Instagram className="mt-0.5 size-4 shrink-0" />
+              <a
+                href="https://www.instagram.com/fundacion.porunmundomejor/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary-foreground"
+              >
+                @fundacion.porunmundomejor
               </a>
             </li>
           </ul>
